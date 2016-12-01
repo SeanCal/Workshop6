@@ -50,16 +50,6 @@ function getFeedItemSync(feedItemId) {
 }
 
 /**
-* Get the feed data for a particular user.
-*/
-app.get('/user/:userid/feed', function(req, res) {
-  // URL parameters are stored in req.params
-  var userid = req.params.userid;
-  // Send response.
-  res.send(getFeedData(userid));
-});
-
-/**
 * Get the user ID from a token. Returns -1 (an invalid ID)
 * if it fails.
 */
